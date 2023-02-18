@@ -45,7 +45,7 @@ Määritystiedoston jälkeen siirryin lopulta asentamaan Djangon komennolla ```p
 ![Kuva5](https://user-images.githubusercontent.com/122887740/219700677-207a936f-74fc-4e9c-a4d9-a70d2a5e20d3.png) </br>
 
 
-Määritystiedosto oli selvästikin määritetty oikein, koska Django asentui koneelle mutkitta. Tein kuitenkin vielä varmistuksena versio tarkistuksen Djangoon, jotta viimeisin oli asentunut koneelle: </br>
+Määritystiedosto oli selvästikin määritetty oikein, koska Django asentui koneelle mutkitta. Tein kuitenkin vielä varmistuksena version tarkistuksen Djangoon, jotta viimeisin versio oli asentunut koneelle: </br>
 ![Kuva6](https://user-images.githubusercontent.com/122887740/219701006-987e45e8-47f7-44a1-adea-8216145ba787.png)
 
 
