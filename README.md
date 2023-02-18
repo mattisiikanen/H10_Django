@@ -73,7 +73,7 @@ Asennuksen jälkeen loin vahvan salasanan tulevalle käyttäjälle komennolla ``
 
 ![Kuva10](https://user-images.githubusercontent.com/122887740/219849706-b0be400c-6896-4134-a2cc-7f77b7357627.png) </br>
 
-Käyttäjän luonnin jälkeen oli aika siirtyä testaamaan kirjautumista, mutta palvelimeni oli sammunut migraatioiden ajaksi, joten lähdin käynnistämään sitä uudelleen, mutta törmäsin seuraavaan ongelmaan: </br>
+Käyttäjän luonnin jälkeen oli aika siirtyä testaamaan kirjautumista, mutta palvelimeni oli sammunut migraatioiden ajaksi. Lähdin käynnistämään palvelinta uudelleen, mutta törmäsin seuraavaan ongelmaan: </br>
 ![Kuva11](https://user-images.githubusercontent.com/122887740/219849873-d78004ba-6489-425f-ac44-ec39e5dd4b76.png) </br>
 
 
