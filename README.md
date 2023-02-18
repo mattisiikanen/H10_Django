@@ -19,7 +19,7 @@ Virtuaalikoneen speksit:
 
 
 ## Aloitus 
-Tehtävän tarkoituksena oli tehdä tunnilla käyty harjoitus Django CRM-ohjelmistolla. Aloitin tehtävät 17.2.2023 klo 17:30 käynnistämällä Hyper-V:llä pyörivän palvelimen. Minulta ei löytynyt etukäteen osaamista Pythonista tai Djangosta, joten olin täysin ohjeiden varassa tehtävien osalta. Luin ensiksi läpi opettajamme Tero Karvisen ohjeen Djangon käyttöön otosta nimeltä "Django 4 Instant Customer Database Tutorial".
+Tehtävän tarkoituksena oli tehdä tunnilla käyty harjoitus Django CRM-ohjelmistolla. Aloitin tehtävät 17.2.2023 klo 17:30 käynnistämällä Hyper-V:llä pyörivän palvelimen. Minulta ei löytynyt etukäteen osaamista Pythonista tai Djangosta, joten olin täysin ohjeiden varassa tehtävien osalta. Luin ensiksi läpi opettajamme Tero Karvisen ohjeen Djangon käyttöönotosta nimeltä "Django 4 Instant Customer Database Tutorial".
 
 ## a) Kannattavaa. Tee oma tietokantasovellus. jossa on weppiliittymä
 
