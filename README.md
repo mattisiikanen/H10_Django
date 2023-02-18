@@ -95,7 +95,7 @@ Määritysten jälkeen päätin kokeilla kirjautumista kummallakin tunnuksella: 
 ![Kuva14](https://user-images.githubusercontent.com/122887740/219850449-63c8d50a-8fed-4bdf-89e8-ed601b154da2.png) </br>
 ![Kuva15](https://user-images.githubusercontent.com/122887740/219850480-0bdf23d3-c915-4779-8f90-5bc4c53d887c.png) </br>
 
-Oikeudet näyttivät asettuneen oikein tunnusteni kohdalla. Tunnusten luonnin jälkeen siirryin vielä luomaan asiakas tietokannan Djangoon ajamalla komennon ```./manage.py startapp crm```, tämä loi uuden kansion yritysoy-kansion alle nimeltä crm. Seuraavana oli vuorossa konfiguroida asetuksia lisäämällä seuraavat määritteet settings.py tiedostoon käyttäen microa: </br>
+Oikeudet näyttivät asettuneen oikein tunnusteni kohdalla. Tunnusten luonnin jälkeen siirryin vielä luomaan asiakas tietokannan Djangoon ajamalla komennon ```./manage.py startapp crm```, tämä loi uuden kansion yritysoy-kansion alle nimeltä crm. Seuraavana oli vuorossa konfiguroida asetuksia lisäämällä seuraavaan listaan settings.py tiedoston määritteissä rivi ```'crm',``` käyttäen microa, joka lopulta näytti tältä kokonaisuudessaan: </br>
 ```
 INSTALLED_APPS = [
     'django.contrib.admin',
