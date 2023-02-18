@@ -137,6 +137,28 @@ Muokkauksien jälkeen käynnistin palvelimen vielä uudelleen komennolla ```./ma
 
 Customers näkymä oli ilmestynyt näkyviin!
 
+Aloitin luomaan uusia asiakkaita Yritys Oy:lle: </br>
+![Kuva19](https://user-images.githubusercontent.com/122887740/219865081-1725ffd3-4f0a-42b9-b267-1cde6d8063ed.png)
+Olisi kiva saada näkymään asiakkaiden nimet "Customer Object" sijaan. Tämä saatiin korjattua menemällä crm kansioon ja muokkaamaan models.py tiedostoa.
+
+Syötin models.py tiedostoon seuraavat määritteet: </br>
+```
+from django.db import models
+
+class Customer(models.Model):
+    name = models.CharField(max_length=160)
+
+    def __str__(self):
+        return self.name
+```
+
+Tallensin tiedoston ja navigoin takaisin Djangon hallintaan webselaimessa ja päivitin sivun: </br>
+![Kuva20](https://user-images.githubusercontent.com/122887740/219865238-f5db890a-b436-4fe8-a7f1-be858f6d9927.png) </br>
+Nyt asiakkaani näkyivät oikein!
+
+Otin vielä lopulta vapauden toistaa aiemmat prosessit ja luoda vielä asiakkaiden lisäksi toisen tietokannan nimeltä Products, jonne myös loin esimerkki tuotteita: </br>
+
+![Kuva21](https://user-images.githubusercontent.com/122887740/219865517-29e14f76-53fa-41eb-86c7-5fbe6b20ff11.png)</br>
 
 
 ## Lopetus
