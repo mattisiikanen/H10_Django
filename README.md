@@ -117,7 +117,7 @@ class Customer(models.Model):
 ```
 
 
-Tietojen lisäysten jälkeen oli aika jälleen päivittää tietokannat komennoilla: ´´´./manage.py makemigrations``` & ```./manage.py migrate```: </br>
+Tietojen lisäysten jälkeen oli aika jälleen päivittää tietokannat komennoilla: ```./manage.py makemigrations``` & ```./manage.py migrate```: </br>
 
 ![Kuva17](https://user-images.githubusercontent.com/122887740/219851095-8cf6216b-ffc1-47cf-9968-41d2ea6023ce.png) </br>
 
