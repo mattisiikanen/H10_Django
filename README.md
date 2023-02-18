@@ -139,7 +139,7 @@ Customers näkymä oli ilmestynyt näkyviin! Tässä kohtaa pidin pienen tauon j
 
 Aloitin luomaan uusia asiakkaita Yritys Oy:lle: </br>
 ![Kuva19](https://user-images.githubusercontent.com/122887740/219865081-1725ffd3-4f0a-42b9-b267-1cde6d8063ed.png)
-Olisi kiva saada näkymään asiakkaiden nimet "Customer Object" sijaan. Tämä saatiin korjattua menemällä crm kansioon ja muokkaamaan models.py tiedostoa.
+Olisi kiva saada näkymään asiakkaiden nimet "Customer Object" sijaan. Tämä saatiin korjattua menemällä crm kansioon ja muokkaamalla models.py tiedostoa.
 
 Syötin models.py tiedostoon seuraavat määritteet: </br>
 ```
