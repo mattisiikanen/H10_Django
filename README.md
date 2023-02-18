@@ -54,7 +54,7 @@ Klo 17:50 lopetin hommat tältä erää tähän, homma jatkuu myöhemmin.
 ### Djangon konfigurointi
 Hommat jatkuivat seuraavana päivänä 18.2.2023 klo 9:54 </br>
 
-Asennuksen jälkeen vuorossa oli konfiguroida Django käyttöön. Aloitinkin luomalla projektin Djangoon komennolla ```django-admin startproject yritysoy``` ja luonnin jälkeen käynnistämällä serverin ```./manage.py runserver```. Käynnistyksen jälkeen navigoin selaimella osoitteeseen ```http://127.0.0.1:800``` tarkistaakseni palvelimen toiminnan: </br>
+Asennuksen jälkeen vuorossa oli konfiguroida Django käyttöön. Aloitinkin luomalla projektin Djangoon komennolla ```django-admin startproject yritysoy``` ja luonnin jälkeen käynnistämällä serverin ```./manage.py runserver```. Käynnistyksen jälkeen navigoin selaimella osoitteeseen ```http://127.0.0.1:8000``` tarkistaakseni palvelimen toiminnan: </br>
 ![Kuva7](https://user-images.githubusercontent.com/122887740/219849143-43621340-4eb1-4f47-b69c-6ee132684084.png)</br>
 
 
@@ -135,7 +135,8 @@ Muokkauksien jälkeen käynnistin palvelimen vielä uudelleen komennolla ```./ma
 
 ![Kuva18](https://user-images.githubusercontent.com/122887740/219851139-6966cb08-69e1-44a6-bd49-c82d9968e408.png)
 
-Customers näkymä oli ilmestynyt näkyviin!
+Customers näkymä oli ilmestynyt näkyviin! Tässä kohtaa pidin pienen tauon ja jatkoin vasta klo 14.11
+
 
 Aloitin luomaan uusia asiakkaita Yritys Oy:lle: </br>
 ![Kuva19](https://user-images.githubusercontent.com/122887740/219865081-1725ffd3-4f0a-42b9-b267-1cde6d8063ed.png)
@@ -162,7 +163,7 @@ Otin vielä lopulta vapauden toistaa aiemmat prosessit ja luoda vielä asiakkaid
 
 
 ## Lopetus
-Lopetin tehtävien teon klo 21:57. Kyseinen tehtävä avasi hyvin tietokantoja sekä SQL-kielen käsittelyä. Töihin meni tällä erää n. 2h.
+Lopetin tehtävien teon klo 14:27. Kyseinen tehtävä jatkoi ja avasi hyvin tietokantoihin ja tietysti pääpainona CRM-ohjelmiston saloihin. Töihin meni tällä erää kokonaisuudessaan n. 2h.
 
 ## Lähteet:
 Karvinen, Tero, 2022 - Django 4 Instant Customer Database Tutorial (https://terokarvinen.com/2022/django-instant-crm-tutorial/)
