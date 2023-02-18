@@ -19,8 +19,7 @@ Virtuaalikoneen speksit:
 
 
 ## Aloitus 
-Tehtävän tarkoituksena oli tehdä tunnilla käyty harjoitus Djangosta. Aloitin tehtävät 17.2.2023 klo 17:30 käynnistämällä Hyper-V:llä pyörivän palvelimen.
-Minulta ei löytynyt etukäteen osaamista Pythonista tai Djangosta, joten olin täysin ohjeiden varassa tehtävien osalta. Luin ensiksi läpi opettajamme Tero Karvisen ohjeen Djangon käyttöön otosta nimeltä "Django 4 Instant Customer Database Tutorial".
+Tehtävän tarkoituksena oli tehdä tunnilla käyty harjoitus Django CRM-ohjelmistolla. Aloitin tehtävät 17.2.2023 klo 17:30 käynnistämällä Hyper-V:llä pyörivän palvelimen. Minulta ei löytynyt etukäteen osaamista Pythonista tai Djangosta, joten olin täysin ohjeiden varassa tehtävien osalta. Luin ensiksi läpi opettajamme Tero Karvisen ohjeen Djangon käyttöön otosta nimeltä "Django 4 Instant Customer Database Tutorial".
 
 ## a) Kannattavaa. Tee oma tietokantasovellus. jossa on weppiliittymä
 
@@ -50,12 +49,93 @@ Määritystiedosto oli selvästikin määritetty oikein, koska Django asentui ko
 ![Kuva6](https://user-images.githubusercontent.com/122887740/219701006-987e45e8-47f7-44a1-adea-8216145ba787.png)
 
 
-Lopetin hommat tältä erää tähän, homma jatkuu myöhemmin.
+Klo 17:50 lopetin hommat tältä erää tähän, homma jatkuu myöhemmin.
 
 ### Djangon konfigurointi
-Klo 17:50 </br>
+Hommat jatkuivat seuraavana päivänä 18.2.2023 klo 9:54 </br>
 
-Asennuksen jälkeen oli vuorossa 
+Asennuksen jälkeen vuorossa oli konfiguroida Django käyttöön. Aloitinkin luomalla projektin Djangoon komennolla ```django-admin startproject yritysoy``` ja luonnin jälkeen käynnistämällä serverin ```./manage.py runserver```. Käynnistyksen jälkeen navigoin selaimella osoitteeseen ```http://127.0.0.1:800``` tarkistaakseni palvelimen toiminnan: </br>
+![Kuva7](https://user-images.githubusercontent.com/122887740/219849143-43621340-4eb1-4f47-b69c-6ee132684084.png)</br>
+
+
+Palvelin näytti toimivan oikein!
+
+
+Testin jälkeen siirryin päivittämään tietokannat komennoilla: ```./manage.py makemigrations``` ja ```./manage.py migrate``` </br>
+![Kuva8](https://user-images.githubusercontent.com/122887740/219849345-f97e625a-a859-455b-b6fc-1dab39522f96.png) </br>
+
+
+Päivitysten jälkeen oli vuorossa luoda käyttäjä ohjelmistoon, mutta ennen luontia tuli asentaa salasanageneraattori, jotta uusille käyttäjille voidaan taata vahva salasana: </br>
+![Kuva9](https://user-images.githubusercontent.com/122887740/219849515-9ab83beb-384b-4d55-bb5e-e8498fd98dff.png) </br>
+
+
+Asennuksen jälkeen loin vahvan salasanan tulevalle käyttäjälle komennolla ```pwgen -s 20 1```, jonka syötin superuserille mattis: </br>
+
+![Kuva10](https://user-images.githubusercontent.com/122887740/219849706-b0be400c-6896-4134-a2cc-7f77b7357627.png) </br>
+
+Käyttäjän luonnin jälkeen oli aika siirtyä testaamaan kirjautumista, mutta palvelimeni oli sammunut migraatioiden ajaksi, joten lähdin käynnistämään sitä uudelleen, mutta törmäsin seuraavaan ongelmaan: </br>
+![Kuva11](https://user-images.githubusercontent.com/122887740/219849873-d78004ba-6489-425f-ac44-ec39e5dd4b76.png) </br>
+
+
+Jokin toinen palvelu on selvästi kaapannut portin 8000 käyttöönsä, joten päätin Googlata asiaa ja löysin Stack Overflow:sta forumin kyseisestä ongelmasta ja ratkaisun siihen. Oli vuorossa siis tappaa prosessi, joka käyttää porttia 8000 ajamalla komento: ```sudo fuser -k 8000/tcp```. Portin vapautuksen jälkeen käynnistin vielä uudelleen palvelimen ```./manage.py runserver``` ja nyt palvelin lähtikin nätisti jälleen käyntiin. Seuraavaksi navigoin osoitteeseen ```http://127.0.0.1:8000/admin/```: </br>
+
+![Kuva12](https://user-images.githubusercontent.com/122887740/219850082-4e17e9f6-b7ae-43f6-922a-a2f752b48178.png) </br>
+
+Testasin juuri luomiani tunnuksia onnistuneesti. Kirjautumisen jälkeen siirryin luomaan kaksi uutta tunnusta, joille myös määrittelin sopivat oikeudet: </br>
+![Kuva13](https://user-images.githubusercontent.com/122887740/219850272-5162123a-2fa2-4102-849d-ce1d957f2a38.png)</br>
+
+Määrittelin tunnuksille seuraavat oikeudet: </br>
+- Tilustenvalvoja: Active, Staff status & Superuser status
+- Torppari: Active
+
+
+Määritysten jälkeen päätin kokeilla kirjautumista kummallakin tunnuksella: </br>
+
+
+![Kuva14](https://user-images.githubusercontent.com/122887740/219850449-63c8d50a-8fed-4bdf-89e8-ed601b154da2.png) </br>
+![Kuva15](https://user-images.githubusercontent.com/122887740/219850480-0bdf23d3-c915-4779-8f90-5bc4c53d887c.png) </br>
+
+Oikeudet näyttivät asettuneen oikein tunnusteni kohdalla. Tunnusten luonnin jälkeen siirryin vielä luomaan asiakas tietokannan Djangoon ajamalla komennon ```./manage.py startapp crm```, tämä loi uuden kansion yritysoy-kansion alle nimeltä crm. Seuraavana oli vuorossa konfiguroida asetuksia lisäämällä seuraavat määritteet settings.py tiedostoon käyttäen microa: </br>
+```
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'crm',
+]
+```
+Ja crm/models.py - tiedostoon nämä: </br>
+
+```
+from django.db import models
+
+class Customer(models.Model):
+   name = models.CharField(max_length=300)
+```
+
+
+Tietojen lisäysten jälkeen oli aika jälleen päivittää tietokannat komennoilla: ´´´./manage.py makemigrations``` & ```./manage.py migrate```: </br>
+
+![Kuva17](https://user-images.githubusercontent.com/122887740/219851095-8cf6216b-ffc1-47cf-9968-41d2ea6023ce.png) </br>
+
+
+
+Päivitysten jälkeen siirryin konfiguroimaan crm kansiossa olevaa admin.py tiedostoa ja lisäsin sinne seuraava tiedot: </br>
+```
+from django.contrib import admin
+from . import models
+
+admin.site.register(models.Customer)
+```
+
+Muokkauksien jälkeen käynnistin palvelimen vielä uudelleen komennolla ```./manage.py runserver``` ja testasin kirjautumista: </br>
+
+![Kuva18](https://user-images.githubusercontent.com/122887740/219851139-6966cb08-69e1-44a6-bd49-c82d9968e408.png)
+
+Customers näkymä oli ilmestynyt näkyviin!
 
 
 
@@ -64,3 +144,5 @@ Lopetin tehtävien teon klo 21:57. Kyseinen tehtävä avasi hyvin tietokantoja s
 
 ## Lähteet:
 Karvinen, Tero, 2022 - Django 4 Instant Customer Database Tutorial (https://terokarvinen.com/2022/django-instant-crm-tutorial/)
+
+Stack Overflow, Django Server Error: port is already in use (https://stackoverflow.com/questions/20239232/django-server-error-port-is-already-in-use)
