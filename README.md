@@ -152,11 +152,11 @@ class Customer(models.Model):
         return self.name
 ```
 
-Tallensin tiedoston ja navigoin takaisin Djangon hallintaan webselaimessa ja päivitin sivun: </br>
+Tallensin tiedoston ja navigoin takaisin Djangon hallintaan webselaimessa sekä päivitin sivun: </br>
 ![Kuva20](https://user-images.githubusercontent.com/122887740/219865238-f5db890a-b436-4fe8-a7f1-be858f6d9927.png) </br>
 Nyt asiakkaani näkyivät oikein!
 
-Otin vielä lopulta vapauden toistaa aiemmat prosessit ja luoda vielä asiakkaiden lisäksi toisen tietokannan nimeltä Products, jonne myös loin esimerkki tuotteita: </br>
+Otin lopulta vielä vapauden toistaa aiemmat prosessit ja luoda vielä asiakkaiden lisäksi toisen tietokannan nimeltä Products, jonne myös loin esimerkki tuotteita: </br>
 
 ![Kuva21](https://user-images.githubusercontent.com/122887740/219865517-29e14f76-53fa-41eb-86c7-5fbe6b20ff11.png)</br>
 
