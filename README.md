@@ -1,4 +1,4 @@
-# h9_Sequel
+# h10_Django
 
 
 ## Ympäristö
