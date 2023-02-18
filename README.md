@@ -52,7 +52,7 @@ Määritystiedosto oli selvästikin määritetty oikein, koska Django asentui ko
 Klo 17:50 lopetin hommat tältä erää tähän, homma jatkuu myöhemmin.
 
 ### Djangon konfigurointi
-Hommat jatkuivat seuraavana päivänä 18.2.2023 klo 9:54 </br>
+Hommat jatkuivat seuraavana päivänä 18.2.2023 klo 9:54. </br>
 
 Asennuksen jälkeen vuorossa oli konfiguroida Django käyttöön. Aloitinkin luomalla projektin Djangoon komennolla ```django-admin startproject yritysoy``` ja luonnin jälkeen käynnistämällä serverin ```./manage.py runserver```. Käynnistyksen jälkeen navigoin selaimella osoitteeseen ```http://127.0.0.1:8000``` tarkistaakseni palvelimen toiminnan: </br>
 ![Kuva7](https://user-images.githubusercontent.com/122887740/219849143-43621340-4eb1-4f47-b69c-6ee132684084.png)</br>
