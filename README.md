@@ -131,7 +131,7 @@ from . import models
 admin.site.register(models.Customer)
 ```
 
-Muokkauksien jälkeen käynnistin palvelimen vielä uudelleen komennolla ```./manage.py runserver``` ja testasin kirjautumista: </br>
+Muokkauksien jälkeen käynnistin palvelimen vielä uudelleen komennolla ```./manage.py runserver```, sekä testasin kirjautumista: </br>
 
 ![Kuva18](https://user-images.githubusercontent.com/122887740/219851139-6966cb08-69e1-44a6-bd49-c82d9968e408.png)
 Customers näkymä oli ilmestynyt näkyviin! Tässä kohtaa pidin pienen tauon ja jatkoin vasta klo 14.11.
