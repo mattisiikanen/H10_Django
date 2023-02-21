@@ -65,7 +65,7 @@ Testin jälkeen siirryin päivittämään tietokannat komennoilla: ```./manage.p
 ![Kuva8](https://user-images.githubusercontent.com/122887740/219849345-f97e625a-a859-455b-b6fc-1dab39522f96.png) </br>
 
 
-Päivitysten jälkeen oli vuorossa luoda käyttäjä ohjelmistoon, mutta ennen luontia tuli asentaa salasanageneraattori, jotta uusille käyttäjille voidaan taata vahva salasana: </br>
+Päivitysten jälkeen oli vuorossa luoda käyttäjä ohjelmistoon, mutta ennen luontia tuli asentaa salasanageneraattori, jotta uusille käyttäjille voitiin taata vahva salasana: </br>
 ![Kuva9](https://user-images.githubusercontent.com/122887740/219849515-9ab83beb-384b-4d55-bb5e-e8498fd98dff.png) </br>
 
 
