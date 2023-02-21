@@ -152,7 +152,7 @@ class Customer(models.Model):
         return self.name
 ```
 
-Tallensin tiedoston ja navigoin takaisin Djangon hallintaan webselaimessa sekä päivitin sivun: </br>
+Tallensin tiedoston ja navigoin takaisin Djangon hallintaan webselaimessa, sekä päivitin sivun: </br>
 ![Kuva20](https://user-images.githubusercontent.com/122887740/219865238-f5db890a-b436-4fe8-a7f1-be858f6d9927.png) </br>
 Nyt asiakkaani näkyivät oikein!
 
